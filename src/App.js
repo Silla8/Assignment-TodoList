@@ -19,11 +19,13 @@ function App() {
   function changeName(event)
   {
     temp.name=event.target.value;
+    
   }
 
   function changeDate(event)
   {
     temp.date=event.target.value.split("-").reverse().filter(d=>d.length<4).join("/");
+    
   }
 
   function deleteHandler(event)
@@ -55,7 +57,7 @@ function App() {
             </div>
       </header>
       <body className="App-body ">
-          <div className='w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA]'>
+          <div className='w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA] '>
             <div className='grid grid-cols-3'>
                 <label className='font-semibold'> Task Name 
                   <input className="bg-gray-rounded-sm bg-red-300 h-10 " type="text" required onChange={changeName}/>
