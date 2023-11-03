@@ -61,14 +61,14 @@ function App() {
       </header>
       <body className="App-body ">
           <div className='w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA] '>
-            <div className='grid grid-cols-3'>
-                <label className='font-semibold'> Task Name 
-                  <input className="bg-gray-rounded-sm bg-red-300 h-10 " type="text" required onChange={changeName}/>
+            <div className='Design '>
+                <label className='font-semibold'> <p>Task Name</p> 
+                  <input className="bg-gray-rounded-sm bg-red-300 h-10 md:w-50" type="text" required onChange={changeName}/>
                 </label>
-                <label className='font-semibold'> Due Date
-                  <input className="rounded-sm bg-red-300 h-10 " type= "date" required onChange={changeDate}/>
+                <label className='font-semibold'> <p>Due Date</p>
+                  <input className="rounded-sm bg-red-300 h-10 md:w-50" type= "date" required onChange={changeDate}/>
                 </label>
-                <button onClick={submitHandler} className='rounded-sm bg-red-300 h-10 mt-8' > Save Task </button>
+                <button onClick={submitHandler} className='rounded-sm bg-red-300 h-10 mt-8 md:w-50' > Save Task </button>
             </div>
             <br />
             <div>
