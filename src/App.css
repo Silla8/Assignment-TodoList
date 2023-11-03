@@ -17,14 +17,14 @@
   }
 
   input{
-    max-width: 100%;
+    max-width: 80%;
   }
 
   button{
-    max-width: 100%;
+    max-width: 80%;
   }
   .boxed{
-    width: 80%;
+    width: 120%;
   }
 
 }
