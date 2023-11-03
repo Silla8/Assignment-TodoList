@@ -23,6 +23,9 @@
   button{
     max-width: 100%;
   }
+  .boxed{
+    width: 80%;
+  }
 
 }
 
