@@ -12,7 +12,7 @@ function App() {
 
   useEffect(()=> {
     const saved = JSON.parse(localStorage.getItem("todos"));
-    setTasks(saved);
+    if(saved!=null) setTasks(saved);
   }, [])
 
   function changeName(event)
