@@ -1,13 +1,7 @@
 
 
 import './App.css';
-import { useState } from 'react';
-import ReactPlayer from 'react-player';
-
-
-
-
-
+import { useState, useEffect } from 'react';
 
 
 function App() {
@@ -15,6 +9,11 @@ function App() {
   const temp= {name: "", date: ""};
   const [id, setId]=useState(1);
   const [tasks, setTasks]= useState([]);
+
+  useEffect(()=> {
+    const saved = JSON.parse(localStorage.getItem("todos"));
+    setTasks(saved);
+  }, [])
 
   function changeName(event)
   {
@@ -31,8 +30,10 @@ function App() {
   function deleteHandler(event)
   {
     
-    const res= tasks.filter(data=>data.name!=event.target.innerHTML);
+    const res= tasks.filter(data=>data.name!==event.target.innerHTML);
     setTasks(res);
+    localStorage.removeItem("todos");
+    localStorage.setItem("todos", JSON.stringify(res));
   }
  
   function submitHandler(event)
@@ -41,6 +42,8 @@ function App() {
     {
       const info =[...tasks, { name: temp.name, date: temp.date, id}];
       setTasks(info);
+      localStorage.removeItem("todos");
+      localStorage.setItem("todos", JSON.stringify(info));
       temp.name="";
       temp.date="";
       setId(id+1);
