@@ -60,7 +60,7 @@ function App() {
             </div>
       </header>
       <body className="App-body ">
-          <div className='w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA] md:w-50 shrink-0'>
+          <div className='w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA]  md:shrink-0'>
             <div className='Design '>
                 <label className='font-semibold'> <p>Task Name</p> 
                   <input className="bg-gray-rounded-sm bg-red-300 h-10 md:w-50" type="text" required onChange={changeName}/>
