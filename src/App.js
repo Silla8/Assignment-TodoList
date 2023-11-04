@@ -63,7 +63,7 @@ function App() {
           <div className='boxed w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA] '>
             <div className='Design '>
                 <label className='font-semibold'> <p>Task Name</p> 
-                  <input className="bg-gray-rounded-sm bg-red-300 h-10 " type="text" required onChange={changeName}/>
+                  <input className="rounded-sm bg-red-300 h-10 " type="text" required onChange={changeName}/>
                 </label>
                 <label className='font-semibold'> <p>Due Date</p>
                   <input className="rounded-sm bg-red-300 h-10 " type= "date" required onChange={changeDate}/>
