@@ -30,7 +30,7 @@
     overflow: scroll;
   }
   .App-body{
-    height: 100vh;
+    height: fit-content;
   }
 
 }

@@ -32,7 +32,7 @@ function App() {
     
     const res= tasks.filter(data=>data.name!==event.target.innerHTML);
     setTasks(res);
-    localStorage.removeItem("todos");
+    localStorage.clear();
     localStorage.setItem("todos", JSON.stringify(res));
   }
  
