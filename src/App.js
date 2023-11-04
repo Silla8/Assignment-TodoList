@@ -60,7 +60,7 @@ function App() {
             </div>
       </header>
       <body className="App-body ">
-          <div className='boxed w-2/3 my-10 border-4 p-6 rounded-t-lg bg-[#EDDFEA] '>
+          <div className='boxed w-2/3 pb-[20px]  border-4 p-6 rounded-t-lg bg-[#EDDFEA] max-h-100'>
             <div className='Design '>
                 <label className='font-semibold'> <p>Task Name</p> 
                   <input className="rounded-sm bg-red-300 h-10 " type="text" required onChange={changeName}/>
@@ -71,7 +71,7 @@ function App() {
                 <button onClick={submitHandler} className='rounded-sm bg-red-300 h-10 mt-8' > Save Task </button>
             </div>
             <br />
-            <div>
+            <div className="overflow-y-scroll max-h-64">
               {tasks.map(function(d, index){
                     return (
                     <div key= { d.id}  className='grid grid-cols-2 border-b-2 border-dashed border-cyan-800 my-5 hover:bg-gray-400 hover:rounded-md' onClick={deleteHandler}>
