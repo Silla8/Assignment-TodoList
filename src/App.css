@@ -17,13 +17,15 @@
   }
 
   input{
-    max-width: 80%;
+    max-width: 70%;
   }
 
   button{
-    max-width: 80%;
+    max-width: 70%;
     margin-left: 30px;
+    background-color: #a55;
   }
+ 
   .boxed{
     width: 90%;
     max-height: 90%;
@@ -31,8 +33,14 @@
   }
   .App-body{
     height: fit-content;
+    
   }
 
+  .Counter{
+    position: absolute;
+    border-width: 2px;
+    border-color: black;
+  }
 }
 
 @media screen and (min-width: 740px) { 
@@ -56,11 +64,12 @@
 
 .App-body{
   display: flex;
-  min-height: 450px;
+  min-height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  margin-top: 25px;
  
 }
 
@@ -68,4 +77,7 @@
   color: #61dafb;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
